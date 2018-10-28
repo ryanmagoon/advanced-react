@@ -17,7 +17,7 @@ const SIGNUP_MUTATION = gql`
     }
   }
 `
-
+// yeet
 class Signup extends Component {
   state = {
     name: '',
