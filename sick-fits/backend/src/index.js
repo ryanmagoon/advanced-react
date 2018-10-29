@@ -8,7 +8,11 @@ const server = createServer()
 
 server.express.use(cookieParser())
 
-// TODO use express to populate current user
+// decode the JWT so we can get the user id
+server.express.use((req, res, next) => {
+  console.log('middleware hit!')
+  next()
+})
 
 server.start(
   {
