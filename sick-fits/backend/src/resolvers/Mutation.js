@@ -109,8 +109,6 @@ const mutations = {
       subject: 'Your password reset token',
       html: makeANiceEmail(
         `Your password reset token is here!
-
-        
         <a href="${
           process.env.FRONTEND_URL
         }/reset?resetToken=${resetToken}">Click here to reset</a>`
