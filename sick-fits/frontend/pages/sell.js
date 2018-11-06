@@ -1,9 +1,12 @@
 import CreateItem from '../components/CreateItem'
+import PleaseSignIn from '../components/PleaseSignIn'
 
-class Sell extends React.Component {
-  render() {
-    return <CreateItem />
-  }
-}
+const Sell = () => (
+  <>
+    <PleaseSignIn>
+      <CreateItem />
+    </PleaseSignIn>
+  </>
+)
 
 export default Sell
